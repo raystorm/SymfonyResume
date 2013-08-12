@@ -1,0 +1,39 @@
+{% extends 'ResumeBundle:Default:base.html.twig' %}
+
+{% block body %}
+  <div class="row">
+    <h1>Contact</h1>
+  </div>
+  <hr/>
+
+  <div class="row">
+
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="inputName">Name</label>
+        <div class="controls">
+          <input type="text" id="inputName" placeholder="Your Name">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputSubject">Subject</label>
+        <div class="controls">
+          <input type="password" id="inputPassword" placeholder="Subject">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputMessage">Message</label>
+        <div class="controls">
+          <textarea id="inputMessage" placeholder="Type your message here." rows="5">
+          </textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'ResumeBundle:Default:base.html.twig' %}
+
+{% block body %}
+  <div class="row">
+    <h1>{{ fullName }}</h1>
+  </div>
+  <div class="span9 offset0.75">
+    <hr/>
+    <div class="row"><h2>About</h2></div>
+
+    <div class="row">
+      <h3>Personal</h3>
+      <div class="span9 offset0.75" >
+        <p>
+          I am a family man with 2 happy wonderful kids and a beautiful wife.
+          Born and raised in Alaska,
+          I was raised to "Hope for the best and plan for the worst."
+        </p>
+        <p>
+          Explain my personality/Personal life here.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Professional</h3>
+      <p>
+      I find that the Alaskan Motto of "Hope for the best and plan for the worst."
+      is especially true in Web Application programming.  There is an axiom
+      of the internet I've heard before "The internet hates you."
+
+      In Web Application Programming(and Programming in general.)
+      Leads to certain principles/behaviours:
+<ol>
+  <li>Validate <em>Everything</em>(All input)</li>
+  <li>
+    Add Error checking for all possible scenarios
+    - even those that <em>should never happen</em>
+  </li>
+</ol>
+</p>
+<p>
+Explain my professional demeanor here.
+</p>
+</div>
+  </div>
+{% endblock %}
