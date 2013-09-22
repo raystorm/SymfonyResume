@@ -4,23 +4,30 @@ namespace Tburton\ResumeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+use Symfony\Component\HttpFoundation\Request;
+
 class DefaultController extends Controller
 {
+    //TODO: add template actions
+
     public function indexAction()
     {
-        return $this->render('ResumeBundle:Default:index.html.twig',
-                             array( "page_title" => "Tom Burton's Portfolio") );
+       $name = "Not Logged In";
+
+       return $this->render( 'ResumeBundle:Default:index.html.twig',
+                             array( "page_title" => "Tom Burton's Portfolio",
+                                    "userName"   => $name));
     }
 
     public function aboutAction()
     {
-      return $this->render('ResumeBundle:Default:about.html.twig',
-                           array( "page_title" => "About") );
+       return $this->render('ResumeBundle:Default:about.html.twig',
+                            array( "page_title" => "About") );
     }
 
     public function contactAction()
     {
-      return $this->render('ResumeBundle:Default:contact.html.twig',
-                           array( "page_title" => "Contact") );
+       return $this->render('ResumeBundle:Default:contact.html.twig',
+                            array( "page_title" => "Contact") );
     }
 }

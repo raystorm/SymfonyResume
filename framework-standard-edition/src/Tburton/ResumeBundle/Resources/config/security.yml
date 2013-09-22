@@ -1,0 +1,35 @@
+#security:
+#    firewalls:
+#        main:
+#            pattern:    ^/
+#            logout:     true
+#            anonymous:  true
+#            fp_openid:
+#                # so createUserFromIdentity method will be called
+#                create_user_if_not_exists: true
+#                provider: openid_user_manager # cf below
+#                # previously we used 'contact/email' field. So we have to request it!
+#                # Please note that all OpenID providers may not be able to provide all fields.
+#                # check the desired provider documentation
+#                required_attributes:
+#                    - contact/email
+#    providers:
+#        # the order is important here
+#        openid_user_manager:
+#            id: Tburton.Resume.openid_user_manager # the name of the service
+#        # keep your database provider below! it may look like this:
+#        #database:
+#        #    entity: { class: AcmeDemoBundle:User, property: username }
+##        in_memory:
+##            memory:
+##                users:
+##                    user:  { password: userpass,  roles: [ 'ROLE_USER'  ]  }
+##                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ]  }
+#
+#    # end of changes
+#    access_control:
+#        - { path: ^/login_openid$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+#        #- { path: ^/Resume/Admin,  roles: IS_AUTHENTICATED_OPENID, ROLE_ADMIN }
+#        - { path: ^/Resume/Admin,  roles: IS_AUTHENTICATED_OPENID }
+#        - { path: /Resume/Admin,  roles: IS_AUTHENTICATED_OPENID }
+#        - { path: ^/Admin,         roles: IS_AUTHENTICATED_OPENID }

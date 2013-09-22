@@ -18,13 +18,14 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             //Braincrafted Twitter Bootstrap Bundle
             new Bc\Bundle\BootstrapBundle\BcBootstrapBundle(),
+            new Fp\OpenIdBundle\FpOpenIdBundle(),
             new Tburton\ResumeBundle\ResumeBundle(),
             //holds User accounds for DB integration and easier linkage to Symfony
             //new FOS\UserBundle\FOSUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
+            //$bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();

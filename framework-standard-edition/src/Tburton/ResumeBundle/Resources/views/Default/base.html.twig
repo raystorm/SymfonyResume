@@ -39,63 +39,8 @@
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="/Resume">{{ fullName }}</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              {# TODO: How can I easily set class="active" per page? #}
-              {% if page_title == "Tom Burton's Portfolio" %}
-                <li class="active" >
-              {% else %}
-                <li>
-              {% endif %}
-                <a href="/Resume">Home</a>
-              </li>
-              {% if page_title == "About" %}
-                <li class="active" >
-              {% else %}
-                <li>
-              {% endif %}
-                <a href="/Resume/About">About</a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  Resume<b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="nav-header">Formats</li>
-                  <li class="divider"></li>
-                  <li><a href="#">Html</a></li>
-                  <li><a href="#">Word Document</a></li>
-                  <li><a href="#">Text</a></li>
-                  <li><a href="#">PDF</a></li>
-                </ul>
-              </li>
-              {% if page_title == "About" %}
-                <li class="active" >
-              {% else %}
-                <li>
-              {% endif %}
-                <a href="/Resume/Contact">Contact</a>
-              </li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+    {{ render(controller(  'ResumeBundle:NavBar:NavBar',
+                         { 'page_title' : page_title }) ) }}
 
     <div class="container">
       {% block body %}{% endblock %}

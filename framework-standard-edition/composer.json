@@ -21,7 +21,11 @@
       "braincrafted/bootstrap-bundle"         : "1.4.2",
       "twitter/bootstrap"                     : "v2.3.2",
       "jquery/jquery"                         : "1.9.*",
-      "leafo/lessphp"                         : "0.3.9"
+      "leafo/lessphp"                         : "0.3.9",
+      "ferdynator/phpword"                    : "dev-master",
+      "zendframework/zendservice-livedocx"    : "2.0.*@dev",
+      "fp/openid-bundle"                      : "2.2.*@dev",
+      "fp/lightopenid"                        : "dev-master"
    },
    "scripts":
    {

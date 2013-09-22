@@ -5,3 +5,23 @@ services:
 #    resume.example:
 #        class: %resume.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+    Tburton.Resume.openid_user_manager:
+        class: Tburton\ResumeBundle\Users\OpenIdUserManager
+        # we used an EntityManager, so don't forget it in dependency injection
+        # you may want to adapt it, only the IdentityManager is mandatory
+        #arguments: [@fp_openid.identity_manager]
+        arguments: [@Tburton.Resume.openid_identity_manager]
+
+    Tburton.Resume.openid_identity_manager:
+        class: Tburton\ResumeBundle\Users\OpenIdIdentityManager
+        #arguments: [@fp_openid.model.identity.class]
+        arguments: [@Tburton.Resume.openid_identity_class]
+
+    Tburton.Resume.openid_identity_class:
+        #db_driver: orm -- line that says DB to use.  Currently not using one
+        class: Tburton\ResumeBundle\Users\OpenIdUser
+        #arguements: array
+
+    Tburton.Resume.openId_user_class:
+        class: Tburton\ResumeBundle\Users\OpenIdUser

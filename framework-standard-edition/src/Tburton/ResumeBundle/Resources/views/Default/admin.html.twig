@@ -1,0 +1,33 @@
+{% extends 'ResumeBundle:Default:base.html.twig' %}
+
+{# Admin Page for logged in as Administrator #}
+
+{% block body %}
+  <div class="row">
+    <h1>Admin</h1>
+  </div>
+  <hr/>
+
+  <p> Welcome {{ user.username }}</p>
+
+  <p>
+    <h3>User Object</h3>
+    <code style="white-space: pre; display: block;">{{ dump(user) }}</code>
+  </p>
+
+  <p>
+    <h3>User Attributes</h3>
+    <code style="white-space: pre; display: block;">{{ dump(attributes) }}</code>
+  </p>
+
+  <h2>Resume Upload</h2>
+  <hr/>
+
+  {% if result %}
+    <div style="color: #308014; font-weight: bold; font-size: larger;">
+      {{ result }}
+    </div>
+  {% endif %}
+
+  {{ form(form) }}
+{% endblock %}

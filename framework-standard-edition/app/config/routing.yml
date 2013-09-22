@@ -1,0 +1,36 @@
+#Initially put the Resume site in a subdirectory
+root:
+  defaults:  { _controller: ResumeBundle:Default:index }
+  path:      /
+
+resume-About:
+  defaults:  { _controller: ResumeBundle:Default:about }
+  path:      /About
+
+resume-Contact:
+  defaults:  { _controller: ResumeBundle:Default:contact }
+  path:      /Contact
+
+resume-Admin:
+  defaults:  { _controller: ResumeBundle:Admin:admin }
+  path:      /Admin
+
+#file downloads
+resume-doc:
+  defaults:  { _controller: ResumeBundle:File:docx }
+  path:      /Resume/docx
+
+resume-html:
+  defaults:  { _controller: ResumeBundle:File:html }
+  path:      /Resume/html
+
+resume-txt:
+  defaults:  { _controller: ResumeBundle:File:txt }
+  path:      /Resume/txt
+
+resume-pdf:
+  defaults:  { _controller: ResumeBundle:File:pdf }
+  path:      /Resume/pdf
+
+fp_openid_security:
+    resource: "@FpOpenIdBundle/Resources/config/routing/security.xml"
