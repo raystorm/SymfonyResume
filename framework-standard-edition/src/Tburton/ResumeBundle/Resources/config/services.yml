@@ -1,4 +1,6 @@
-parameters:
+imports:
+  - { resource: parameters.yml }
+#parameters:
 #    resume.example.class: Tburton\ResumeBundle\Example
 
 services:
@@ -11,7 +13,7 @@ services:
         # we used an EntityManager, so don't forget it in dependency injection
         # you may want to adapt it, only the IdentityManager is mandatory
         #arguments: [@fp_openid.identity_manager]
-        arguments: [@Tburton.Resume.openid_identity_manager]
+        arguments: [@Tburton.Resume.openid_identity_manager, "%admin.emailAdresses%"]
 
     Tburton.Resume.openid_identity_manager:
         class: Tburton\ResumeBundle\Users\OpenIdIdentityManager
@@ -21,7 +23,9 @@ services:
     Tburton.Resume.openid_identity_class:
         #db_driver: orm -- line that says DB to use.  Currently not using one
         class: Tburton\ResumeBundle\Users\OpenIdUser
-        #arguements: array
+        #arguments: array
+        #arguments: [admin.emailAdresses]
+        arguments:  ["%admin.emailAdresses%"]
 
     Tburton.Resume.openId_user_class:
         class: Tburton\ResumeBundle\Users\OpenIdUser

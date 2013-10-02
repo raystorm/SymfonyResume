@@ -46,23 +46,26 @@
           </li>
 
         </ul>
-        {% if not user %}
-          {{ form_start(form, {'attr': {'class': 'navbar-form pull-right',
-                                        'action': '/Admin'} }) }}
+        {% if user == 'anon.' %}
+          <form action="/Login" class="navbar-form pull-right" >
+          {# {{ form_start(form, {'attr': {'class': 'navbar-form pull-right',
+                                                   'action': '/Admin'} }) }} #}
             <button type="submit" class="btn">Sign in</button>
-          {{ form_end(form) }}
+          {#{{ form_end(form) }}#}
+          </form>
         {% else %}
-        <div class="nav-collapse collapse pull-right">
-          <ul class="nav">
-            {% if page_title == "Admin" %}
-            <li class="active" >
-              {% else %}
-            <li>
-              {% endif %}
-              <a href="/Admin">Admin</a>
-            </li>
-          </ul>
-        </div>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              {% if page_title == "Admin" %}
+              <li class="active" >
+                {% else %}
+              <li>
+                {% endif %}
+                <a href="/Admin">Admin</a>
+              </li>
+              <li><a href="/Logout">Logout</a></li>
+            </ul>
+          </div>
         {% endif %}
         {# TODO: test and swith to this version from the "symfony" version
         <form class="navbar-form pull-right" action="/Admin">

@@ -25,7 +25,7 @@ class OpenIdUserIdentity extends UserIdentity
    */
   protected $user;
 
-  /*
+  /**
    * It inherits an "identity" string field, and an "attributes" text field
    */
   public function __construct()

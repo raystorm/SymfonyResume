@@ -25,6 +25,7 @@ twig:
   debug:            %kernel.debug%
   strict_variables: %kernel.debug%
   globals:
+    #TODO: move to the parameters.yml file
     fullName: "Tom Burton"
     siteName: "Tom Burton's Portfolio Site"
 
@@ -120,4 +121,5 @@ bc_bootstrap:
 
 # OpenId login stuffs
 fp_open_id:
-    identity_class: Acme\DemoBundle\Entity\OpenIdIdentity
+     identity_class: Tburton\ResumeBundle\Users\OpenIdUserIdentity
+#    identity_class: Acme\DemoBundle\Entity\OpenIdIdentity

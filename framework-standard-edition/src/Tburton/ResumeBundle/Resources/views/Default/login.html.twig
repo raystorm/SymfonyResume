@@ -1,0 +1,82 @@
+{% extends 'ResumeBundle:Default:base.html.twig' %}
+
+{% block stylesheets %}
+  <link href="{{ asset('bundles/resume/css/buttons.css') }}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset('bundles/resume/css/extras.css') }}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block body %}
+
+  {% if error %}
+    <div>{{ error }}</div>
+  {% endif %}
+
+  {#
+  <form action="{{ path('login_check') }}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="_password" />
+
+    &#123;&#35;
+        If you want to control the URL the user
+        is redirected to on success (more details below)
+        <input type="hidden" name="_target_path" value="/account" />
+    &#35;&#125;
+
+    <button type="submit">login</button>
+  </form>
+  #}
+
+  <form id="fp_openid_login" method="post"
+        action="{{ path("fp_openid_security_check") }}" >
+
+    {#spacer#}
+    <div><br /></div>
+
+    <h2>Login With:</h2>
+
+    {# not OpenId, used a something called "Connect"
+    <button class="button transparent" >
+      <img src="{{ asset('bundles/resume/images/Facebook-Icon.jpg') }}">
+    </button>
+    &nbsp;&nbsp;
+    #}
+    <button class="button transparent"
+            onclick="submitLoginForm('https://www.google.com/accounts/o8/id')" >
+      <img src="{{ asset('bundles/resume/images/google_logo.png') }}">
+    </button>
+    &nbsp;&nbsp;
+    {# Open ID not Supported :(
+    &nbsp;&nbsp;
+    <button class="button transparent" >
+      <img src="{{ asset('bundles/resume/images/MSLive.jpg') }}">
+    </button>
+    &nbsp;&nbsp; #}
+    <button class="button transparent"
+            onclick="submitLoginForm('http://me.yahoo.com/')"  >
+      <img src="{{ asset('bundles/resume/images/yahoo.png') }}">
+    </button>
+    <h3>OR</h3>
+    <label for="openid_identifier">Identifier: </label>
+    <input type="text" id="openid_identifier" name="openid_identifier" value="" />
+    <input type="hidden" id="target_path" name="_target_path" value="" />
+
+    <input type="submit" id="_submit" name="_submit" value="Login" />
+  </form>
+
+  <script language="JavaScript">
+    /**
+     *  Function for submitting the login form with known endpoints.
+     *  @param idUrl string Url of the OpenId endpoint
+     */
+    function submitLoginForm(idUrl)
+    {
+      var form = document.getElementById('fp_openid_login');
+      var ident = document.getElementById('openid_identifier');
+      ident.value = idUrl;
+      form.submit(); //if this doesn't work try clicking the submit button
+    }
+  </script>
+{% endblock %}

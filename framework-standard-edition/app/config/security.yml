@@ -4,6 +4,7 @@ security:
         Tburton\ResumeBundle\Users\OpenIdUser:     plaintext
 
     role_hierarchy:
+        ROLE_USER:         IS_AUTHENTICATED_OPENID
         ROLE_ADMIN:        ROLE_USER
         ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 
@@ -24,7 +25,9 @@ security:
 
         main:
             pattern:    ^/
-            logout:     true
+            logout:
+                path:   /Logout
+                target: /
             anonymous:  true
             fp_openid:
                 # so createUserFromIdentity method will be called
@@ -46,11 +49,13 @@ security:
 
     # end of changes
     access_control:
-        - { path: ^/login_openid$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        #- { path: ^/login_openid$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/Login$,        role: IS_AUTHENTICATED_ANONYMOUSLY }
         #- { path: ^/Resume/Admin,  roles: IS_AUTHENTICATED_OPENID, ROLE_ADMIN }
         - { path: ^/Resume/Admin,  roles: IS_AUTHENTICATED_OPENID }
-        - { path: /Resume/Admin,  roles: IS_AUTHENTICATED_OPENID }
-        - { path: ^/Admin,         roles: IS_AUTHENTICATED_OPENID }
+        - { path: /Resume/Admin,   roles: IS_AUTHENTICATED_OPENID }
+        #- { path: ^/Admin,         roles: IS_AUTHENTICATED_OPENID }
+        - { path: ^/Admin,         roles: ROLE_ADMIN }
 
         #login:
         #    pattern:  ^/demo/secured/login$

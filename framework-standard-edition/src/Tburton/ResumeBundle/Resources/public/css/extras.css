@@ -1,0 +1,10 @@
+/*
+ * Extra stuff for the buttons specifif to This site.
+ * image sizing, etc
+ */
+
+.button img
+{
+  max-height: 75px;
+  max-width:  100px;
+}

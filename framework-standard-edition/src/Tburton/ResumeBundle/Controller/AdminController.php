@@ -24,7 +24,6 @@ class AdminController extends Controller
       $user = "Error: Not Logged In!";
       //if ($user) { $name = $user->getNickname(); }
 
-
       $log = $this->get('logger');
 
       $form = $this->createFormBuilder()

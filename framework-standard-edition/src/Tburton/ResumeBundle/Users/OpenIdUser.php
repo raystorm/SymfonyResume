@@ -16,14 +16,10 @@ class OpenIdUser implements UserInterface
   private $userName;
   private $roles = array();
 
-//  function __construct(array $attributes)
-//  {
-//     if ( null != $attributes )
-//     {
-//       $userName = $attributes['userName'];
-//     }
-//  }
+  private $adminEmails;
 
+  function __construct($adminEmail)
+  { $this->adminEmails = $adminEmail; }
 
   /**
    *  Returns the username used to authenticate the user.
@@ -38,6 +34,29 @@ class OpenIdUser implements UserInterface
   function setFromAttributes(array $attributes)
   {
      //TODO: find out common attributes and set properties here
+     /*
+      * These should be the attributes in the array.
+      *
+        - contact/email
+        - namePerson/first
+        - namePerson/last
+      *
+      * compare contact/email to the emails in parameters.yml
+      */
+
+     if ( null != $attributes )
+     {
+       $email = $attributes['contact/email'];
+       if ( !is_array($this->adminEmails) ) { return; }
+       foreach ($this->adminEmails as $address )
+       {
+          if ( $address === $email)
+          {
+            $this->roles[] = 'ROLE_ADMIN';
+            break;
+          }
+       }
+     }
   }
 
   /**
@@ -53,11 +72,7 @@ class OpenIdUser implements UserInterface
    *
    * @return Role[] The user roles
    */
-  public function getRoles()
-  {
-    // TODO: Implement getRoles() method.
-    return $this->roles;
-  }
+  public function getRoles() { return $this->roles; }
 
   /**
    *  Returns the password used to authenticate the user.

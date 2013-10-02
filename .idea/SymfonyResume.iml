@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="google-appengine-php" name="Google App Engine (Python)">
-      <configuration>
-        <option name="rootFolder" value="C:\Users\tfburton\Documents\private\SymfonyResume" />
-        <option name="sdkFolder" value="C:\Users\tfburton\Documents\private\google_appengine\" />
-        <option name="pythonPath" value="C:\Python27\python.exe" />
-      </configuration>
-    </facet>
-  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="C:\Users\Linda\Documents\Tom's Stuff\SymfonyResume\composer" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/alchemy/zippy" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/braincrafted/bootstrap-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/common" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/doctrine-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/ferdynator/phpword" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/fp/lightopenid" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/fp/openid-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/friendsofsymfony/user-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/guzzle/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/incenteev/composer-parameter-handler" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/jquery/jquery" />
@@ -26,6 +23,8 @@
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/leafo/lessphp" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/openid/php-openid" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/phpword/phpword" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/pimple/pimple" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/distribution-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/framework-extra-bundle" />
@@ -39,34 +38,56 @@
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/twig/extensions" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/twitter/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-code" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-config" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-http" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-loader" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-log" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-server" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-servicemanager" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-soap" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-uri" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-version" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zendframework" />
+      <excludeFolder url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zendservice-livedocx" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/composer.phar" />
           <root url="phar://$MODULE_DIR$/framework-standard-edition/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+          <root url="phar://$MODULE_DIR$/composer.phar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/composer.phar" />
           <root url="phar://$MODULE_DIR$/framework-standard-edition/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+          <root url="phar://$MODULE_DIR$/composer.phar" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="Composer Vendors">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/fp/lightopenid" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/fp/openid-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/twig/extensions" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/jdorn/sql-formatter" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/leafo/lessphp" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/guzzle/guzzle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/jquery/jquery" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/pimple/pimple" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/distribution-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/framework-extra-bundle" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/alchemy/zippy" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/symfony/icu" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/symfony/symfony" />
@@ -78,23 +99,46 @@
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/orm" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/dbal" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/doctrine-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/ferdynator/phpword" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/braincrafted/bootstrap-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/kriswallsmith/assetic" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-log" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-uri" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-code" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-http" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-soap" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-debug" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-config" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-loader" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-server" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-stdlib" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-escaper" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-version" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-validator" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-eventmanager" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-servicemanager" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zendservice-livedocx" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/fp/lightopenid" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/fp/openid-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/twig/twig" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/twig/extensions" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/jdorn/sql-formatter" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/leafo/lessphp" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/guzzle/guzzle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/jquery/jquery" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/pimple/pimple" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/generator-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/distribution-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/sensio/framework-extra-bundle" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/alchemy/zippy" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/symfony/icu" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/symfony/symfony" />
@@ -106,11 +150,29 @@
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/orm" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/dbal" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/collections" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/doctrine/doctrine-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/ferdynator/phpword" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/braincrafted/bootstrap-bundle" />
           <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/kriswallsmith/assetic" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-log" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-uri" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-code" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-http" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-soap" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-debug" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-config" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-loader" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-server" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-stdlib" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-escaper" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-version" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-validator" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-eventmanager" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zend-servicemanager" />
+          <root url="file://$MODULE_DIR$/framework-standard-edition/vendor/zendframework/zendservice-livedocx" />
         </SOURCES>
       </library>
     </orderEntry>

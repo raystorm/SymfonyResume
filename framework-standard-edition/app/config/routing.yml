@@ -15,6 +15,25 @@ resume-Admin:
   defaults:  { _controller: ResumeBundle:Admin:admin }
   path:      /Admin
 
+#security points
+resume-login:
+  defaults: { _controller: ResumeBundle:Login:login }
+  path:     /Login
+
+#cover the systems default and alternate path
+
+resume-login2:
+  defaults: { _controller: ResumeBundle:Login:login }
+  path:     /login
+
+resume-login3:
+  defaults: { _controller: ResumeBundle:Login:login }
+  path:     /login_openid
+
+resume-logout:
+  defaults: { _controller: ResumeBundle:Login:logout }
+  path:     /Logout
+
 #file downloads
 resume-doc:
   defaults:  { _controller: ResumeBundle:File:docx }

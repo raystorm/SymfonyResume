@@ -14,6 +14,10 @@ class DefaultController extends Controller
     {
        $name = "Not Logged In";
 
+       $securityContext = $this->get('security.context');
+       $user = $securityContext->getToken()->getUser();
+       if ( $user ) { $name = $user; }
+
        return $this->render( 'ResumeBundle:Default:index.html.twig',
                              array( "page_title" => "Tom Burton's Portfolio",
                                     "userName"   => $name));

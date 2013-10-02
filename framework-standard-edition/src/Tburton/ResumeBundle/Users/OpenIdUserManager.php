@@ -16,12 +16,16 @@ use Tburton\ResumeBundle\Users\OpenIdUserIdentity;
  */
 class OpenIdUserManager extends UserManager
 {
+  private $adminAddress;
+
   // we will use an EntityManager, so inject it via constructor
-  public function __construct(IdentityManagerInterface $identityManager)
+  public function __construct(IdentityManagerInterface $identityManager,
+                              $addresses)
                               //, EntityManager $entityManager)
   {
     parent::__construct($identityManager);
     //$this->entityManager = $entityManager;
+    $this->adminAddress = $addresses;
   }
 
   /**
@@ -63,8 +67,7 @@ class OpenIdUserManager extends UserManager
 
     // end of example
 
-
-    $user = new OpenIdUser();
+    $user = new OpenIdUser($this->adminAddress);
     $user->setFromAttributes($attributes);
 
     $openIdIdentity->setUser($user);
