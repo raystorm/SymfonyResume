@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7e7e79c-ca57-4480-96bf-5225ae37049c" name="Default" comment="Added a git ingore file to ensure uploaded resumes dureing testing don't get accidentally added to the repository">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
+    <list default="true" id="b7e7e79c-ca57-4480-96bf-5225ae37049c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SymfonyResume.iml" afterPath="$PROJECT_DIR$/.idea/SymfonyResume.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/about.html.twig" afterPath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/about.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/base.html.twig" afterPath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/base.html.twig" />
@@ -40,7 +40,7 @@
     <file path="/routing.yml" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380698869779" ignored="false" />
     <file path="/index.html" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1373268405883" ignored="false" />
     <file path="/index.twig" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1373269506886" ignored="false" />
-    <file path="/Dummy.txt" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380782128624" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380784537472" ignored="false" />
     <file path="/indexController.php" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1373442872992" ignored="false" />
     <file path="/start.bat" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1373358040028" ignored="false" />
     <file path="/a.dummy" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380611635498" ignored="false" />
@@ -80,6 +80,7 @@
     <file path="/login.html.twig" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380613777981" ignored="false" />
     <file path="/button-extras.css" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380266847861" ignored="false" />
     <file path="/readme.md" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380784487658" ignored="false" />
+    <file path="/LICENSE.txt" changelist="b7e7e79c-ca57-4480-96bf-5225ae37049c" time="1380785455392" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,19 +202,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="601" selection-end="601" vertical-scroll-proportion="0.5026087">
+            <state line="17" column="4" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/security.yml">
+      <file leaf-file-name="LICENSE.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="24" column="82" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.7095652">
               <folding />
             </state>
           </provider>
@@ -290,7 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/LoginController.php" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/public/css/buttons.css" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/public/css/button-extras.css" />
         <option value="$PROJECT_DIR$/framework-standard-edition/app/config/config.yml" />
@@ -306,6 +306,7 @@
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/File/.gitignore" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/.gitignore" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/LICENSE.txt" />
       </list>
     </option>
   </component>
@@ -375,6 +376,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tburton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResumeBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -666,7 +725,11 @@
       <created>1380782055679</created>
       <updated>1380782055679</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add a readme.md file to the project with a brief description">
+      <created>1380784567748</created>
+      <updated>1380784567748</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -761,7 +824,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a git ingore file to ensure uploaded resumes dureing testing don't get accidentally added to the repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a readme.md file to the project with a brief description" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -780,6 +843,7 @@
     <MESSAGE value="Customize the Login page&#10;  + friendly URL&#10;  + alternate URLs for completeness/ease of use&#10;  + buttons for google/yahoo&#10;  + Added BonBon Button CSS to make the buttons look nice.&#10;Locked down the Admin page to Admins only&#10;Updated OpenIdUser and OpenIdUserManager to get the known admin emails from parameters.yml&#10;Corrected the debugging User display on the index page&#10;removed the Symfony form code from navBar in favor of a plain html form.(button)&#10;&#10;  &#10;" />
     <MESSAGE value="Customize the Login page&#10;  + friendly URL&#10;  + alternate URLs for completeness/ease of use&#10;  + buttons for google/yahoo&#10;  + Added BonBon Button CSS to make the buttons look nice.&#10;Locked down the Admin page to Admins only&#10;Updated OpenIdUser and OpenIdUserManager to get the known admin emails from parameters.yml&#10;Corrected the debugging User display on the index page&#10;removed the Symfony form code from navBar in favor of a plain html form.(button)" />
     <MESSAGE value="Added a git ingore file to ensure uploaded resumes dureing testing don't get accidentally added to the repository" />
+    <MESSAGE value="Add a readme.md file to the project with a brief description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -787,11 +851,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="45" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0">
@@ -895,7 +954,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="601" selection-end="601" vertical-scroll-proportion="0.5026087">
+        <state line="17" column="4" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="82" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.7095652">
           <folding />
         </state>
       </provider>
