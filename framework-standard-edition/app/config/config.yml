@@ -107,7 +107,7 @@ doctrine:
 # Swiftmailer Configuration
 swiftmailer:
   transport: %mailer_transport%
-  host:      %mailer_host%
+  host:      %mailer_host%n 
   username:  %mailer_user%
   password:  %mailer_password%
   spool:     { type: memory }
@@ -123,3 +123,43 @@ bc_bootstrap:
 fp_open_id:
      identity_class: Tburton\ResumeBundle\Users\OpenIdUserIdentity
 #    identity_class: Acme\DemoBundle\Entity\OpenIdIdentity
+
+
+# Insert application logging   
+monolog:
+  handlers:
+#                applog:
+#                type: stream
+#                path: /var/log/symfony.log
+#                level: error
+#      
+#        main:
+#                type: fingers_crossed
+#                action_level: warning
+#                handler: file
+#        
+#       file:
+#                type: stream
+#                level: debug
+#      
+    syslog:
+      type: syslog
+      level: info  
+    console:
+      type:  console
+      level: info
+      verbosity_levels:
+        VERBOSITY_NORMAL: NOTICE
+    error_log:
+            type:  stream
+#            type:  service
+#            id:    Error_logger
+            level: info
+    stdout:
+        type:  stream
+        path:  "php://stdout"
+        level: debug
+    stderr: 
+        type:  stream
+        path:  "php://stderr"
+        level: warning        
