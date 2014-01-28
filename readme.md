@@ -5,7 +5,7 @@ and Uploaded resumes.
 
 **Features**
   - Upload resumes in a docx format
-  - Leverages {PHPLiveDocX}(http://www.phplivedocx.org/articles/brief-introduction-to-phplivedocx/) to automatically convert uploaded resumes
+  - Leverages [PHPLiveDocX](http://www.phplivedocx.org/articles/brief-introduction-to-phplivedocx/) to automatically convert uploaded resumes
     Uploaded Resumes converted to:
     + txt
     + html
