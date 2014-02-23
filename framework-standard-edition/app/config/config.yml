@@ -118,8 +118,17 @@ bc_bootstrap:
   assets_dir:  %kernel.root_dir%/../vendor/twitter/bootstrap
   jquery_path: %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.9.1.js
 
-
 # OpenId login stuffs
 fp_open_id:
      identity_class: Tburton\ResumeBundle\Users\OpenIdUserIdentity
 #    identity_class: Acme\DemoBundle\Entity\OpenIdIdentity
+monolog:
+  handlers:
+    stdout:
+      type:  stream
+      path:  "php://stdout"
+      level: debug
+    stderr:
+      type:  stream
+      path:  "php://stderr"
+      level: warning

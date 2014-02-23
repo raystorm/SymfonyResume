@@ -35,7 +35,7 @@ class FileController extends Controller
    * @return string with the relative path to where the Resume files are stored
    */
   private function getFolder()
-  { return $this->container->getParameter('reaume.FolderLocation'); }
+  { return $this->container->getParameter('resume.FolderLocation'); }
 
   /**
    *  @param $ext - String file extension
