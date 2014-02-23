@@ -2,16 +2,14 @@
 
 namespace Tburton\ResumeBundle\Controller;
 
+use Alchemy\Zippy;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\SecurityContext;
-use Alchemy\Zippy;
-
-use ZendService\LiveDocx;
 use ZendService\LiveDocx\MailMerge;
+use ZendService\LiveDocx;
 
 class AdminController extends Controller
 {
@@ -71,7 +69,7 @@ class AdminController extends Controller
    * @return string with the relative path to where the Resume files are stored
    */
   private function getFolder()
-   { return $this->container->getParameter('reaume.FolderLocation'); }
+   { return $this->container->getParameter('resume.FolderLocation'); }
 
    private function handleFileUpload(UploadedFile $uploaded)
    {
