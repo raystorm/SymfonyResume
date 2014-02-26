@@ -60,8 +60,9 @@ class AdminController extends Controller
       return $this->render( 'ResumeBundle:Default:admin.html.twig',
                             array( "page_title" => "Tom Burton's Portfolio",
                                    "user"       => $user,
+                                   "userDump"   => print_r($user,true),
                                    "form"       => $form->createView(),
-                                   "attributes" => $attributes,
+                                   "attributes" => print_r($attributes,true),
                                    "result"     => $result));
    }
 
