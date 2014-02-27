@@ -19,9 +19,9 @@ class FileController extends Controller
 
   public function htmlAction() { return $this->getFile('html'); }
 
-  public function txtAction()  { return $this->getFile('txt'); }
+  public function txtAction()  { return $this->getFile('txt');  }
 
-  public function pdfAction()  { return $this->getFile('pdf'); }
+  public function pdfAction()  { return $this->getFile('pdf');  }
 
   /** Generate a Nice name for the downloaded resumes */
   public function buildFileName()

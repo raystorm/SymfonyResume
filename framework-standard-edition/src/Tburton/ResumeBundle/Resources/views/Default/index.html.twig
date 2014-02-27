@@ -6,9 +6,9 @@
   <div class="hero-unit">
           <h1>{{ fullName }}</h1>
           <p>{{ fullName }} is an excellent Web Application Developer.</p>
-          <P>
-            Welcome dump(userName) !
-          </P>
+          {% if welcomeName %}
+          <P> Welcome {{ welcomeName }}! </P>
+          {% endif %}
           <p>
             <a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a>
           </p>

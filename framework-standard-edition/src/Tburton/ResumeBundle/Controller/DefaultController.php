@@ -4,8 +4,6 @@ namespace Tburton\ResumeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use Symfony\Component\HttpFoundation\Request;
-
 class DefaultController extends Controller
 {
     //TODO: add template actions
@@ -15,12 +13,15 @@ class DefaultController extends Controller
        $name = "Not Logged In";
 
        $securityContext = $this->get('security.context');
-       $user = $securityContext->getToken()->getUser();
-       if ( $user ) { $name = $user; }
+       $token = $securityContext->getToken();
+
+       if ( $token && $securityContext->isGranted('IS_AUTHENTICATED_OPENID') )
+       { $name = $token->getUser()->getUserName(); }
 
        return $this->render( 'ResumeBundle:Default:index.html.twig',
-                             array( "page_title" => "Tom Burton's Portfolio",
-                                    "userName"   => $name));
+                             array( "page_title"  => "Tom Burton's Portfolio",
+                                    "userName"    => $token->getUser(),
+                                    "welcomeName" => $name));
     }
 
     public function aboutAction()
@@ -34,4 +35,6 @@ class DefaultController extends Controller
        return $this->render('ResumeBundle:Default:contact.html.twig',
                             array( "page_title" => "Contact") );
     }
+
+    public function dump($var) { return print_r($var, true); }
 }
