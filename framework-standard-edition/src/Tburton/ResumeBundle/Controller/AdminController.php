@@ -11,6 +11,11 @@ use Symfony\Component\Security\Core\SecurityContext;
 use ZendService\LiveDocx\MailMerge;
 use ZendService\LiveDocx;
 
+/**
+ *  Controller to handle the Admin Page and resume file upload/conversion
+ *
+ *  @author tfburton
+ */
 class AdminController extends Controller
 {
    //TODO: move to a parameter
@@ -23,7 +28,7 @@ class AdminController extends Controller
       //if ($user) { $name = $user->getNickname(); }
 
       $log = $this->get('logger');
-
+      
       $form = $this->createFormBuilder()
                    ->add('resume', 'file')
                    ->add('Upload','submit')
@@ -40,6 +45,7 @@ class AdminController extends Controller
         $this->handleFileUpload($uploaded);
         //TODO: add a more regourous check // assume for now
         $result = "Resume upload successful.";
+        $log->debug("Resume upload completed.");
       }
 
       $attributes = array();
@@ -58,7 +64,7 @@ class AdminController extends Controller
       $attributes = $securityContext->getToken()->getAttributes();
 
       return $this->render( 'ResumeBundle:Default:admin.html.twig',
-                            array( "page_title" => "Tom Burton's Portfolio",
+                            array("page_title" => "Tom Burton's Portfolio",
                                    "user"       => $user,
                                    "userDump"   => print_r($user,true),
                                    "form"       => $form->createView(),
@@ -90,20 +96,21 @@ class AdminController extends Controller
       $this->cleanupTmpFiles();
 
       $log->debug('checking the file extension, found: '.$uploaded->getExtension());
-      $log->debug(' uploaded file type(best guess):'.$uploaded->getMimeType());
+      $log->debug('uploaded file type(best guess):'.$uploaded->getMimeType());
       //TODO: create routine to convert bytes to human readable.
-      $log->debug( ' uploaded file size:'.$this->makeBytesReadable($uploaded->getSize()));
+      $log->debug('uploaded file size:'.$this->makeBytesReadable($uploaded->getSize()));
 
       //TODO move the file to a temporary area
       $uploaded->move($this->getFolder(),'resume-tmp.zip');
+      $log->debug('file moved to temporary work area,');
 
       $this->removeHeader();
 
       //rename the archive to .docx
       $fs->rename($this->getFolder().'/resume-tmp.zip',
-          $this->getFolder().'/resume-tmp.docx');
+           		  $this->getFolder().'/resume-tmp.docx');
       if ( $fs->exists($this->getFolder().'/resume-tmp.docx') )
-      { $log->debug("file exists"); }
+      { $log->debug("resume tmp file successfully created."); }
 
       //create the html & txt files  //liveDocx
       $mailMerge = new MailMerge();
@@ -124,7 +131,7 @@ class AdminController extends Controller
       $mailMerge->createDocument();
 
       $fs->copy($this->getFolder().'/resume-tmp.docx',
-          $this->getFolder().'/resume.docx');
+          	    $this->getFolder().'/resume.docx');
 
       $log->debug('generating the different file formats');
       $html = $mailMerge->retrieveDocument('html');
@@ -135,6 +142,16 @@ class AdminController extends Controller
       $fs->dumpFile($this->getFolder().'/resume.html', $html);
       $fs->dumpFile($this->getFolder().'/resume.txt',  $text);
       $fs->dumpFile($this->getFolder().'/resume.pdf',  $pdf);
+      
+      //verify file creation
+      if ( $fs->exists($this->getFolder().'/resume.docx') )
+      { $log->debug("resume docx file successfully created."); }
+      if ( $fs->exists($this->getFolder().'/resume.html') )
+      { $log->debug("resume html file successfully created."); }
+      if ( $fs->exists($this->getFolder().'/resume.txt') )
+      { $log->debug("resume txt file successfully created."); }
+      if ( $fs->exists($this->getFolder().'/resume.pdf') )
+      { $log->debug("resume pdf file successfully created."); }
 
       $this->cleanupTmpFiles();
    }
