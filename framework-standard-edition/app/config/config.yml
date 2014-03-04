@@ -103,6 +103,17 @@ doctrine:
   orm:
     auto_generate_proxy_classes: %kernel.debug%
     auto_mapping: true
+    
+#TODO: update this for whatever Cloudbees uses
+doctrine_mongodb:
+    connections:
+        default:
+            server: mongodb://localhost:27017
+            options: {}
+    default_database: test_database
+    document_managers:
+        default:
+            auto_mapping: true    
 
 # Swiftmailer Configuration
 swiftmailer:

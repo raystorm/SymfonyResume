@@ -4,3 +4,5 @@ tmp/
 .project
 .settings
 .buildpath
+framework-standard-edition/web/css/
+framework-standard-edition/web/js/
