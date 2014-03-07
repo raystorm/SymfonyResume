@@ -2,19 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7e7e79c-ca57-4480-96bf-5225ae37049c" name="Default" comment="More resume.FolderLocation property corrections&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SymfonyResume.iml" afterPath="$PROJECT_DIR$/.idea/SymfonyResume.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/images/Facebook-Icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/images/MSLive.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/images/google_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/images/yahoo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/config/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Controller/AdminController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/DependencyInjection/Configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Controller/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Controller/FileController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Controller/LoginController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Users/OpenIdIdentityManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Users/OpenIdUser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Users/OpenIdUserIdentity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Users/OpenIdUserManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/ResumeBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Repository/ResumeDocumentDAO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/DependencyInjection/ResumeExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/about.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/admin.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/base.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/blank.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/css/buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/config/config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/contact.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/css/extras.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/index-backup.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/doc/index.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/web/Resume/indexController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/login.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/translations/messages.fr.xlf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/views/Default/navBar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Controller/navBarController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/js/openid-jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/public/js/openid-no-framework.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/config/parameters.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/app/config/security.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/config/security.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Symfony/src/Tburton/ResumeBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-standard-edition/app/config/config.yml" afterPath="$PROJECT_DIR$/framework-standard-edition/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml" afterPath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/tfburton.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/tfburton.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Document/resumeDocument.php" afterPath="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Document/resumeDocument.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SymfonyResume.iws" />
@@ -83,49 +118,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="589" selection-end="589" vertical-scroll-proportion="-0.0" vertical-offset="408" max-vertical-offset="867">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navBarController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/navBarController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="13" column="32" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/admin.html.twig">
+      <file leaf-file-name="resumeDocument.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Document/resumeDocument.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="663">
+            <state line="18" column="52" selection-start="370" selection-end="370" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/AdminController.php">
+      <file leaf-file-name="ResumeDocumentDAO.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Repository/ResumeDocumentDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="148" selection-start="6735" selection-end="6735" vertical-scroll-proportion="0.0" vertical-offset="3434" max-vertical-offset="4131">
-              <folding>
-                <marker date="1393754843109" expanded="true" signature="51:389" placeholder="..." />
-              </folding>
+            <state line="22" column="40" selection-start="569" selection-end="569" vertical-scroll-proportion="0.6738739" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml.dist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="31" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="112" column="38" selection-start="3763" selection-end="3763" vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2788">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +175,7 @@
       <file leaf-file-name="autoload.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/autoload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="58" selection-start="267" selection-end="267" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+            <state line="13" column="58" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -151,16 +184,16 @@
       <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="109" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parameters.yml.dist" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml.dist">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="265" selection-end="265" vertical-scroll-proportion="0.2642487" vertical-offset="0" max-vertical-offset="579">
+            <state line="9" column="41" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -243,13 +276,11 @@
         <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/framework-standard-edition/.gitignore" />
         <option value="$PROJECT_DIR$/framework-standard-edition/upgrade.json" />
-        <option value="$PROJECT_DIR$/framework-standard-edition/app/config/config.yml" />
         <option value="$PROJECT_DIR$/framework-standard-edition/web/app.php" />
         <option value="$PROJECT_DIR$/framework-standard-edition/web/app_dev.php" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/navBarController.php" />
-        <option value="$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/admin.html.twig" />
         <option value="$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/zip.php" />
         <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/AdminController.php" />
@@ -258,6 +289,11 @@
         <option value="$PROJECT_DIR$/../PHP/php.ini" />
         <option value="$PROJECT_DIR$/framework-standard-edition/composer.lock" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/framework-standard-edition/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Document/resumeDocument.php" />
+        <option value="$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Repository/ResumeDocumentDAO.php" />
       </list>
     </option>
   </component>
@@ -363,8 +399,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -505,8 +539,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tburton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResumeBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tburton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ResumeBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Document" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SymfonyResume" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework-standard-edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -788,7 +924,8 @@
       <workItem from="1393397733028" duration="2833000" />
       <workItem from="1393754421481" duration="4278000" />
       <workItem from="1394178026088" duration="1388000" />
-      <workItem from="1394180670417" duration="510000" />
+      <workItem from="1394180670417" duration="1436000" />
+      <workItem from="1394184096546" duration="2666000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit&#10;">
       <created>1376287644900</created>
@@ -838,11 +975,15 @@
       <created>1393402210699</created>
       <updated>1393402210699</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="default parameters file saved ad parameters.yml.dist actual file should now be ignored">
+      <created>1394181279432</created>
+      <updated>1394181279432</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37663000" />
+    <option name="totallyTimeSpent" value="41255000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -869,7 +1010,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32703003" sideWeight="0.398524" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263041" sideWeight="0.398524" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -878,7 +1019,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35443038" sideWeight="0.50104165" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -892,6 +1032,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37297297" sideWeight="0.49973643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45261985" sideWeight="0.4996277" order="8" side_tool="false" content_ui="tabs" />
@@ -922,7 +1063,8 @@
     <MESSAGE value="Logging updated/File Controller fixed&#10; - logging output is caught by the Cloudbees System&#10;  - FileController now correctly grabs property resume.FolderLocation&#10;  &#10;" />
     <MESSAGE value="More resume.FolderLocation property corrections&#10;" />
     <MESSAGE value="Controller corrections to do the variable dumping in the control and only display the output on the page.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller corrections to do the variable dumping in the control and only display the output on the page.&#10;" />
+    <MESSAGE value="default parameters file saved ad parameters.yml.dist actual file should now be ignored" />
+    <option name="LAST_COMMIT_MESSAGE" value="default parameters file saved ad parameters.yml.dist actual file should now be ignored" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -931,16 +1073,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/UPGRADE.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -1007,11 +1139,6 @@
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/logs/prod.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Controller/LoginController.php">
@@ -1087,11 +1214,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2397" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/config_prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="899" />
@@ -1124,13 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/views/Default/admin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="65" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="663">
@@ -1154,7 +1269,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="202" column="148" selection-start="6735" selection-end="6735" vertical-scroll-proportion="0.0" vertical-offset="3434" max-vertical-offset="4131">
           <folding>
-            <marker date="1393754843109" expanded="true" signature="51:389" placeholder="..." />
+            <marker date="1393754843109" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1193,7 +1308,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="58" selection-start="267" selection-end="267" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+        <state line="13" column="58" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
@@ -1205,16 +1320,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="109" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+        <state line="9" column="41" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml.dist">
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="265" selection-end="265" vertical-scroll-proportion="0.2642487" vertical-offset="0" max-vertical-offset="579">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="38" selection-start="3763" selection-end="3763" vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="31" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="32" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Document/resumeDocument.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="370" selection-end="370" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-standard-edition/src/Tburton/ResumeBundle/Repository/ResumeDocumentDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="40" selection-start="569" selection-end="569" vertical-scroll-proportion="0.6738739" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>

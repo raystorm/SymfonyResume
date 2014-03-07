@@ -5,7 +5,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 
 /**
  *  for storing the various resume formats in Mongo
- *  @MongoDB\Document
+ *  @MongoDB\Document(repositoryClass="Tburton\ResumeBundle\Repository\ResumeDocumentDAO")
  */
 class resumeDocument
 {
