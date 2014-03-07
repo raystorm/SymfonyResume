@@ -5,3 +5,5 @@ tmp/
 .settings
 .buildpath
 .parameters.yml
+framework-standard-edition/web/css/
+framework-standard-edition/web/js/
