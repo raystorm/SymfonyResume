@@ -1,0 +1,9 @@
+# Parameters for configuring the bundle
+parameters:
+  admin.emailAdresses:
+    - admin@example.com
+    - me@example.com
+  liveDocx.username: someUsername
+  liveDocx.password: secret
+  resume.FolderLocation: ..\src\Tburton\ResumeBundle\Resources\views\Default\File
+

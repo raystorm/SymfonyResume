@@ -4,3 +4,4 @@ tmp/
 .project
 .settings
 .buildpath
+.parameters.yml
