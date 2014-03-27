@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 /**
  *  Controller used when special actions aren't required
- * 
+ *
  *  @author tfburton
  */
 class DefaultController extends Controller
@@ -23,7 +23,7 @@ class DefaultController extends Controller
        if ( $token && $securityContext->isGranted('IS_AUTHENTICATED_OPENID') )
        { $name = $token->getUser()->getUserName(); }
 
-       return $this->render( 'ResumeBundle:Default:index.html.twig',
+       return $this->render('ResumeBundle:Default:index.html.twig',
                              array("page_title"  => "Tom Burton's Portfolio",
                                     "userName"    => $token->getUser(),
                                     "welcomeName" => $name));
@@ -32,13 +32,13 @@ class DefaultController extends Controller
     public function aboutAction()
     {
        return $this->render('ResumeBundle:Default:about.html.twig',
-                             array( "page_title" => "About") );
+                             array("page_title" => "About") );
     }
 
     public function contactAction()
     {
        return $this->render('ResumeBundle:Default:contact.html.twig',
-                             array( "page_title" => "Contact") );
+                             array("page_title" => "Contact") );
     }
 
     public function dump($var) { return print_r($var, true); }

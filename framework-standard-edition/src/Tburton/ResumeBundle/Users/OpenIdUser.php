@@ -1,9 +1,4 @@
 <?php
-/**
- *   Actual User class (parsed from passed attributes)
- *
- *   User: tfburton
- */
 
 namespace Tburton\ResumeBundle\Users;
 
@@ -11,6 +6,11 @@ use Monolog\Logger;
 use Symfony\Component\Security\Core\User\Role;
 use Symfony\Component\Security\Core\User\UserInterface;
 
+/**
+ *   Actual User class (parsed from passed attributes)
+ *
+ *   User: tfburton
+ */
 class OpenIdUser implements UserInterface
 {
   private $userName;
@@ -26,10 +26,7 @@ class OpenIdUser implements UserInterface
    *
    *  @return string The username
    */
-  public function getUsername()
-  {
-     return $this->userName;
-  }
+  public function getUsername() { return $this->userName; }
 
   function setFromAttributes(array $attributes)
   {

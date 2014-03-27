@@ -7,3 +7,4 @@
 /bin/
 /composer.phar
 /idea/
+/src/Tburton/ResumeBundle/Resources/config/parameters.yml

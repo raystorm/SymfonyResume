@@ -76,11 +76,7 @@ class OpenIdUserManager extends UserManager
     //return $openIdIdentity;
   }
 
-  public function refreshUser(UserInterface $user)
-  {
-    return $user;
-  }
-
+  public function refreshUser(UserInterface $user) { return $user; }
 
   public function supportsClass($class)
   { return $class === 'Tburton\ResumeBundle\Users\OpenIdUser'; }

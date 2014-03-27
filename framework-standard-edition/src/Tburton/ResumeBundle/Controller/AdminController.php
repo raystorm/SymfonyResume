@@ -10,6 +10,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\SecurityContext;
 use ZendService\LiveDocx\MailMerge;
 use ZendService\LiveDocx;
+use Tburton\ResumeBundle\Document\ResumeDocument;
+use Doctrine\ODM\MongoDB\DocumentManager;
 
 /**
  *  Controller to handle the Admin Page and resume file upload/conversion
@@ -28,7 +30,7 @@ class AdminController extends Controller
       //if ($user) { $name = $user->getNickname(); }
 
       $log = $this->get('logger');
-      
+
       $form = $this->createFormBuilder()
                    ->add('resume', 'file')
                    ->add('Upload','submit')
@@ -63,12 +65,12 @@ class AdminController extends Controller
       //$user - $this->getUser();
       $attributes = $securityContext->getToken()->getAttributes();
 
-      return $this->render( 'ResumeBundle:Default:admin.html.twig',
-                            array("page_title" => "Tom Burton's Portfolio",
+      return $this->render('ResumeBundle:Default:admin.html.twig',
+                            array("page_title"  => "Tom Burton's Portfolio",
                                    "user"       => $user,
-                                   "userDump"   => print_r($user,true),
+                                   "userDump"   => print_r($user, true),
                                    "form"       => $form->createView(),
-                                   "attributes" => print_r($attributes,true),
+                                   "attributes" => print_r($attributes, true),
                                    "result"     => $result));
    }
 
@@ -90,33 +92,32 @@ class AdminController extends Controller
 
       $cont = $this->container;
 
-      //ensure the  tmp files do not exist
+      //ensure the tmp files do not exist
       $fs = new Filesystem();
 
       $this->cleanupTmpFiles();
 
-      $log->debug('checking the file extension, found: '.$uploaded->getExtension());
+      $log->debug('checking the file extension, found: '
+                  .$uploaded->getExtension());
       $log->debug('uploaded file type(best guess):'.$uploaded->getMimeType());
-      //TODO: create routine to convert bytes to human readable.
-      $log->debug('uploaded file size:'.$this->makeBytesReadable($uploaded->getSize()));
-
-      //TODO move the file to a temporary area
-      $uploaded->move($this->getFolder(),'resume-tmp.zip');
+      $log->debug('uploaded file size:'
+                 .$this->makeBytesReadable($uploaded->getSize()));
+      $uploaded->move($this->getFolder(), 'resume-tmp.zip');
       $log->debug('file moved to temporary work area,');
 
       $this->removeHeader();
 
       //rename the archive to .docx
-      $fs->rename($this->getFolder().'/resume-tmp.zip',
-           		  $this->getFolder().'/resume-tmp.docx');
-      if ( $fs->exists($this->getFolder().'/resume-tmp.docx') )
+      $fs->rename($this->getFolder() . '/resume-tmp.zip',
+           		  $this->getFolder() . '/resume-tmp.docx');
+      if ( $fs->exists($this->getFolder() . '/resume-tmp.docx') )
       { $log->debug("resume tmp file successfully created."); }
 
-      //create the html & txt files  //liveDocx
+      //create the html & txt files //liveDocx
       $mailMerge = new MailMerge();
 
       //TODO: move this to a seperate "Non-Committed Settings file before I commit changes.
-      //TODO: sign up for a free account from:
+      //uses a free account from:
       // https://packages.zendframework.com/docs/latest/manual/en/modules/zendservice.livedocx.html
       $log->debug('connecting to Live DocX to do the heavy lifting for resume conversion');
       //$container->getParameter('mailer.transport');
@@ -126,7 +127,7 @@ class AdminController extends Controller
 
       $mailMerge->setLocalTemplate($this->getFolder().'/resume-tmp.docx');
 
-      $mailMerge->assign(null);  // must be called as of phpLiveDocx 1.2
+      $mailMerge->assign(null); // must be called as of phpLiveDocx 1.2
 
       $mailMerge->createDocument();
 
@@ -134,15 +135,15 @@ class AdminController extends Controller
           	    $this->getFolder().'/resume.docx');
 
       $log->debug('generating the different file formats');
+      $docx = $mailMerge->retrieveDocument('docx'); //is there a better way?
       $html = $mailMerge->retrieveDocument('html');
       $text = $mailMerge->retrieveDocument('txt');
       $pdf  = $mailMerge->retrieveDocument('pdf');
 
-      //$fs->dumpFile('./File/resume.docx', //$archiveZip);
       $fs->dumpFile($this->getFolder().'/resume.html', $html);
       $fs->dumpFile($this->getFolder().'/resume.txt',  $text);
       $fs->dumpFile($this->getFolder().'/resume.pdf',  $pdf);
-      
+
       //verify file creation
       if ( $fs->exists($this->getFolder().'/resume.docx') )
       { $log->debug("resume docx file successfully created."); }
@@ -154,6 +155,15 @@ class AdminController extends Controller
       { $log->debug("resume pdf file successfully created."); }
 
       $this->cleanupTmpFiles();
+
+      //persist (save) files to mongo
+      $manager = $this->getDocumentManager();
+
+      $manager->persist(ResumeDocument::factory('docx', $docx));
+      $manager->persist(ResumeDocument::factory('html', $html));
+      $manager->persist(ResumeDocument::factory('txt',  $txt));
+      $manager->persist(ResumeDocument::factory('pdf',  $pdf));
+      $manager->flush();
    }
 
    /**
@@ -167,8 +177,8 @@ class AdminController extends Controller
       $readable = $bytes;
       while ( $readable > 1024 && 3 > $count )
       {
-        $readable = $readable / 1024;
-        ++$count;
+         $readable = $readable / 1024;
+         ++$count;
       }
 
       $unit = ' ';
@@ -210,28 +220,32 @@ class AdminController extends Controller
     * removes the header file from the word document
     */
    private function removeHeader()
-  {
-     $log = $this->get('logger');
+   {
+      $log = $this->get('logger');
 
-     //TODO: unzip the file
-     $log->debug('Opening the file as a .zip');
+      //TODO: unzip the file
+      $log->debug('Opening the file as a .zip');
 
-     $manager = new \ZipArchive();
-     $manager->open($this->getFolder().'/resume-tmp.zip');
+      $archiver = new \ZipArchive();
+      $archiver->open($this->getFolder().'/resume-tmp.zip');
 
-     //TODO: modify the archive
-     //remove the header file
-     $log->debug('removing the header');
-     if ( !$manager->deleteName('word/header1.xml') )
-     { //failure -- try emptying the file
-       $manager->addFromString('word/header1.xml','');
-     }
+      //TODO: modify the archive, remove the header file
+      $log->debug('removing the header');
+      if ( !$archiver->deleteName('word/header1.xml') )
+      { //failure -- try emptying the file
+        $archiver->addFromString('word/header1.xml','');
+   	  }
 
-     //TODO: figure out a good temp directory for extraction
-     //$archiveZip->extractMembers('/word/document.xml', '/tmp/');
+      //TODO: figure out a good temp directory for extraction
+      //$archiveZip->extractMembers('/word/document.xml', '/tmp/');
 
-     //TODO: do I need to close the archive?
-     $manager->close();
-  }
+      //TODO: do I need to close the archive?
+      $archiver->close();
+   }
 
+   /**
+    * @return DocumentManager
+    */
+   private function getDocumentManager()
+   { return $this->get('doctrine_mongodb')->getManager(); }
 }

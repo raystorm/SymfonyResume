@@ -140,11 +140,11 @@ monolog:
     syslog:
       type: syslog
       level: info  
-    console:
-      type:  console
-      level: info
-      verbosity_levels:
-        VERBOSITY_NORMAL: NOTICE
+    #console:
+    #  type:  console
+    #  level: info
+    #  verbosity_levels:
+    #    VERBOSITY_NORMAL: NOTICE
     error_log:
             type:  stream
             level: info

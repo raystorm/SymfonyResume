@@ -1,7 +1,4 @@
 <?php
-/**
- * Base User Class to be used by the User manager (no storage)
- */
 
 namespace Tburton\ResumeBundle\Users;
 
@@ -10,6 +7,9 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 use Fp\OpenIdBundle\Model\UserIdentityInterface;
 
+/**
+ * Base User Class to be used by the User manager (no storage)
+ */
 class OpenIdUserIdentity extends UserIdentity
 {
   /**

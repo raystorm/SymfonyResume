@@ -1,10 +1,4 @@
 <?php
-/**
- * Controller to display and handle login across the pages
- *
- * User: tfburton
- *
- */
 
 namespace Tburton\ResumeBundle\Controller;
 
@@ -12,6 +6,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * Controller to display and handle login across the pages
+ *
+ * User: tfburton
+ *
+ */
 class NavBarController extends Controller
 {
    public function NavBarAction(Request $request, $page_title)

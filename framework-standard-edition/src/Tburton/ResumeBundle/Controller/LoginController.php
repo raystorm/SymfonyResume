@@ -24,7 +24,8 @@ class LoginController extends Controller
       // get the error if any (works with forward and redirect -- see below)
       if ($request->attributes->has(SecurityContext::AUTHENTICATION_ERROR))
       { $error = $request->attributes->get(SecurityContext::AUTHENTICATION_ERROR);}
-      elseif (null !== $session && $session->has(SecurityContext::AUTHENTICATION_ERROR))
+      elseif (null !== $session
+             && $session->has(SecurityContext::AUTHENTICATION_ERROR))
       {
          $error = $session->get(SecurityContext::AUTHENTICATION_ERROR);
          $session->remove(SecurityContext::AUTHENTICATION_ERROR);
@@ -44,8 +45,7 @@ class LoginController extends Controller
                                    array('error' => $error));
       */
       return $this->render('ResumeBundle:Default:login.html.twig',
-                           array('page_title' => 'Login',
-                                 'error' => $error));
+                           array('page_title' => 'Login', 'error' => $error));
    }
 
    public function logoutAction()

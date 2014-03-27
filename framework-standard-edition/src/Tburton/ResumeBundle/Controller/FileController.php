@@ -9,6 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\File;
+use Tburton\ResumeBundle\Repository\ResumeDocumentDAO;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+use Zend\Http\Header\ContentDisposition;
+use MongoDBODMProxies\__CG__\Tburton\ResumeBundle\Document\ResumeDocument;
 
 /**
  *  Controller to handle the serving of the actual Resume files in the various formats
@@ -17,6 +21,7 @@ use Symfony\Component\HttpFoundation\File\File;
  */
 class FileController extends Controller
 {
+   
   public function docxAction() { return $this->getFile('docx'); }
 
   public function htmlAction() { return $this->getFile('html'); }
@@ -34,15 +39,97 @@ class FileController extends Controller
   }
 
   /**
+   *  gets and serves the file from Mongo
+   *  @param unknown $ext
+   */
+  public function getFile($ext)
+  {
+	$dao = $this->getDAO();
+
+    $resume = $dao->findByExt($ext);
+
+   if ( !$resume ) { return $this->error($ext); }
+
+   $response = new StreamedResponse();
+   $d = $response->headers
+                  ->makeDisposition(ResponseHeaderBag::DISPOSITION_INLINE,
+                                    $this->buildFileName(). $ext);
+   $response->headers->set('Content-Disposition', $d);
+
+       //there has to be more elegant way to do this // brute force
+       switch($ext)
+       {
+          case 'docx';
+            $response->setCallback(
+              function()
+              {
+                 echo $this->getDAO()->findByExt('docx')->getFile();
+                 flush();
+              });
+            break;
+
+          case 'html':
+            $response->setCallback(
+              function()
+              {
+                 //echo $this->getDAO()->findByExt('html')-//echo $this->getDAO()->findByExt('html')->getFile();>getFile();
+                 $resume = $this->getDAO()->findByExt('html');
+                 if ( $resume ) //{ echo $resume->getFile(); }
+                 { var_dump($resume); }
+                 else { echo 'Error Retreiving File.'; }
+                 flush();
+              });
+            break;
+
+          case 'txt':
+            $response->setCallback(
+              function()
+              {
+                 echo $this->getDAO()->findByExt('txt')->getFile();
+                 flush();
+              });
+              break;
+
+          case 'pdf':
+            $response->setCallback(
+              function()
+              {
+                 echo $this->getDAO()->findByExt('pdf')->getFile();
+                 flush();
+              });
+            break;
+
+        default:
+          return $this->error($ext);
+     }
+
+     $response->send();
+  }
+
+  /**
+   *  get the repostory (DAO) for getting ResumeDocument objects
+   *  @return ResumeDocumentDAO
+   */
+  private function getDAO()
+  {
+     return $this->get('doctrine_mongodb')->getManager()
+                  ->getRepository('ResumeBundle:ResumeDocument');
+  }
+
+  /**
+   *
    * @return string with the relative path to where the Resume files are stored
    */
   private function getFolder()
   { return $this->container->getParameter('resume.FolderLocation'); }
 
   /**
-   *  @param $ext - String file extension
+   * gets and serves the file from the FileSystem
+   *
+   * @param $ext -
+   *         String file extension
    */
-  public function getFile($ext)
+  public function getFSFile($ext)
   {
   	 $log = $this->get('logger');
      try
