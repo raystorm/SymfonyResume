@@ -1,5 +1,5 @@
 /composer.phar
-.parameters.yml
+parameters.yml
 framework-standard-edition/web/css/
 framework-standard-edition/web/js/
 framework-standard-edition/web/bundles/
@@ -9,6 +9,7 @@ framework-standard-edition/app/logs/*ip
 framework-standard-edition/build/
 framework-standard-edition/vendor/
 framework-standard-edition/bin/
+framework-standard-edition/src/Tburton/ResumeBundle/Resources/config/parameters.yml
 parameters.yml
 *.zip
 tmp/
