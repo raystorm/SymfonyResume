@@ -4,48 +4,78 @@
 
   <!-- Main hero unit for a primary marketing message or call to action -->
   <div class="hero-unit">
-          <h1>{{ fullName }}</h1>
-          <p>{{ fullName }} is an excellent Web Application Developer.</p>
-          {% if welcomeName %}
-          <P> Welcome {{ welcomeName }}! </P>
-          {% endif %}
-          <p>
-            <a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a>
-          </p>
-        </div>
+    <h1>{{ fullName }}</h1>
+    <p>{{ fullName }} is an excellent Web Application Developer.</p>
+    <p>
+      <a href="#outline" class="btn btn-primary btn-large">Learn more &raquo;</a>
+    </p>
+  </div>
 
   <!-- Example row of columns -->
   <div class="row">
-          <div class="span4">
-            <h2>Professional</h2>
-            <p>
-              I keep my code clean and follow accepted best practices for
-              whatever task I undertake.
-              <br />
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh,
-              ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span4">
-            <h2>Experienced</h2>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh,
-              ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="span4">
-            <h2>Hard Working</h2>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-              nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn" href="#">View details &raquo;</a></p>
-          </div>
-        </div>
+    <a id="outline" name="outline" />
+    <div class="span4">
+      <h2>Professional</h2>
+      <p>
+        I keep my code clean and follow accepted best patterns/practices for
+        whatever task I undertake.
+      </p>
+      <p>
+        I have a professional demeanor and treat others with kindness and respect.
+        I do my best to understand user needs and fix bugs / help users with problems
+        in a timely and courteous manner.
+      </p>
+      {# TODO: uncomment when fleshed out / completed
+      <p><a class="btn" href="#">View details &raquo;</a></p>
+      #}
+    </div>
+    <div class="span4">
+      <h2>Experienced</h2>
+      <p>
+        I've worked as a programmer professionally since 2006.  I've maintained
+        existing systems and designed/implemented whole new ones.
+      </p>
+      <p>Including (but not limited to):</p>
+      <ul>
+        <li>
+          Intranet Site
+          <ul>
+            <li>user Managment</li>
+            <li>email address/aliases</li>
+            <li>Timesheets</li>
+            <li>Work Orders</li>
+            <li>BackUp Tracking/billing</li>
+          </ul>
+        </li>
+        <li>Conference Registration System</li>
+        <li>Software Download</li>
+        <li>Tax estimation</li>
+        <li>mainframe integration</li>
+        <li>Interactive Voice Response</li>
+        <li>Waiting Room(Visitor Check-In/Visit Logging)</li>
+        <li>Personnel Information Tracking</li>
+        <li>Static</li>
+      </ul>
+      {# TODO: uncomment when fleshed out / completed
+      <p><a class="btn" href="#">View details &raquo;</a></p>
+      #}
+    </div>
+    <div class="span4">
+      <h2>Hard Working</h2>
+      <p>
+        I rise to meet challenges.  Set goals, which I enjoy completing.
+        When I've set a goal I keep moving forward and don't stop until the
+        job is done or I'm pulled to another project.
+      </p>
+      <p>
+        I can be quite determined in pursuit of my goals, but I still keep my
+        eyes open to new opportunities or ways of doing things.  If there is a
+        simpler/better way to do something I'll do my best to integrate it.
+      </p>
+      {# TODO: uncomment when fleshed out / completed
+      <p><a class="btn" href="#">View details &raquo;</a></p>
+      #}
+    </div>
+  </div>
 
 {% endblock %}
